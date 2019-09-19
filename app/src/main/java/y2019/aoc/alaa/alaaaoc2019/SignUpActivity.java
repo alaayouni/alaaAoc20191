@@ -16,13 +16,6 @@ public class SignUpActivity extends AppCompatActivity {
 
 
 
-    public void onClick(View v) {
-        if(v==){
 
 
-
-            Intent i = new Intent(this, SignUpActivity.class);
-            startActivity(i);
-
-        }
 }
