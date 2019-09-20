@@ -14,7 +14,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     //1. properties defenition
     EditText editTextEmail, editTextPassword;
     Button buttonLogIn;
-    Button buttonSignUp;
+ 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,8 +25,8 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         editTextPassword = findViewById(R.id.editTextPassword);
         buttonLogIn = findViewById(R.id.buttonLogIn);
         buttonLogIn.setOnClickListener(this);
-        buttonSignUp = findViewById(R.id.buttonSignUp);
-        buttonSignUp.setOnClickListener(this);
+
+
 
     }
 

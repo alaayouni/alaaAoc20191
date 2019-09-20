@@ -18,14 +18,35 @@
         android:padding="25dp" />
 
     <EditText
-        android:id="@+id/editTextFirstName"
+    android:id="@+id/editTextFirstName"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="25dp"
+        android:ems="10"
+        android:hint="FirstName"
+        android:inputType="text"
+        android:padding="25dp" />
+
+    <EditText
+        android:id="@+id/editTextLastName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="25dp"
         android:ems="10"
-        android:hint="FirstName"
-        android:inputType=""
+        android:hint="LasttName"
+        android:inputType="text"
         android:padding="25dp" />
+    <EditText
+        android:id="@+id/editTextUsertName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:ems="10"
+        android:hint="UsertName"
+        android:inputType="text"
+        android:padding="25dp" />
+
+
 
 
 

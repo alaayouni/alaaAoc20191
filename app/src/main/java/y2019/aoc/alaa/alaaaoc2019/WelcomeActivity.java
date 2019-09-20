@@ -4,24 +4,25 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.TextView;
 
-public class SignUpActivity extends AppCompatActivity implements View.OnClickListener {
+public class WelcomeActivity extends AppCompatActivity  implements View.OnClickListener {
+
+    TextView tvWelcome;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sign_up);
+        setContentView(R.layout.activity_welcome);
+
+        tvWelcome = findViewById(R.id.tvWelcome);
+        tvWelcome.setOnClickListener(this);
     }
-
-
 
     @Override
     public void onClick(View v) {
 
-        Intent i = new Intent(this, LoginActivity.class);
-
-     //   i.putExtra("email",editTextEmail.getText().toString());
-      //  i.putExtra("password", editTextPassword.getText().toString());
+        Intent i = new Intent(this, MainActivity.class);
         startActivity(i);
     }
 }

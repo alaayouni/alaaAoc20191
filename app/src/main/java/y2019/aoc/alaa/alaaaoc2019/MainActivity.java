@@ -13,10 +13,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         String password =getIntent().getStringExtra("password");
         String email =getIntent().getStringExtra("email");
-        tvEmail = findViewById(R.id.tvEmail);
-        tvPassword = findViewById(R.id.tvpPsssword);
-        tvEmail.setText(email);
-        tvPassword.setText(password);
+     //   tvEmail = findViewById(R.id.tvEmail);
+       // tvPassword = findViewById(R.id.tvpPsssword);
+     //   tvEmail.setText(email);
+     //   tvPassword.setText(password);
 
 
 
