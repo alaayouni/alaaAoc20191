@@ -15,6 +15,7 @@ public class WelcomeActivity extends AppCompatActivity  implements View.OnClickL
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_welcome);
 
+
         tvWelcome = findViewById(R.id.tvWelcome);
         tvWelcome.setOnClickListener(this);
     }

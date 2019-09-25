@@ -21,7 +21,7 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
         Intent i = new Intent(this, LoginActivity.class);
 
      //   i.putExtra("email",editTextEmail.getText().toString());
-      //  i.putExtra("password", editTextPassword.getText().toString());
+      //+  i.putExtra("password", editTextPassword.getText().toString());
         startActivity(i);
     }
 }
