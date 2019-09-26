@@ -23,7 +23,7 @@ public class WelcomeActivity extends AppCompatActivity  implements View.OnClickL
     @Override
     public void onClick(View v) {
 
-        Intent i = new Intent(this, MainActivity.class);
+        Intent i = new Intent(this, SafeRoudActivity.class);
         startActivity(i);
     }
 }

@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-
-</menu>
+       <item android:id="@+id/mnItmPicture"
+             android:title="Picture"/>
+       <item android:id="@+id/mnItmLogOut"
+             android:title="LogOut"/>
+    </menu>
