@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="25dp"
         android:ems="10"
-        android:hint="Email"
+        android:hint="UserName"
         android:inputType="textEmailAddress"
         android:padding="25dp" />
 
