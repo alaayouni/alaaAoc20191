@@ -8,25 +8,28 @@
     tools:context=".MainActivity">
 
 
+    <TextView
+        android:id="@+id/textViewWh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="100dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="126dp"
+        android:text="What Happend ?"
+        android:textColor="#298F2D"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
-    <Button
-        android:id="@+id/TextLogIn"
+    <EditText
+        android:id="@+id/editTextWH"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Log in"
         android:layout_margin="25dp"
         android:ems="10"
-        android:hint="Email"
-        android:inputType="textEmailAddress"
-        android:padding="25dp" />/>
-    <Button
-        android:id="@+id/button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="" />
-
-
-
+        android:inputType="textWebEditText"
+        android:padding="25dp" />
 
 </LinearLayout>

@@ -4,22 +4,29 @@ package y2019.aoc.alaa.alaaaoc2019;
         import android.os.Bundle;
         import android.view.Menu;
         import android.view.MenuItem;
+        import android.view.View;
+        import android.widget.EditText;
         import android.widget.TextView;
         import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
-    TextView tvEmail, tvPassword;
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+    TextView tvWhatH;
+    EditText editTextWhatH;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        String password =getIntent().getStringExtra("password");
-        String email =getIntent().getStringExtra("email");
-     //   tvEmail = findViewById(R.id.tvEmail);
-       // tvPassword = findViewById(R.id.tvpPsssword);
-     //   tvEmail.setText(email);
-     //   tvPassword.setText(password);
+        //String password =getIntent().getStringExtra("password");
+        //String email =getIntent().getStringExtra("email");
+       tvWhatH = findViewById(R.id.textViewWh);
+       editTextWhatH = findViewById(R.id.editTextWH);
+        tvWhatH.setOnClickListener(this);
+
+
+
+
+
 
 
     }
