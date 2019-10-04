@@ -33,13 +33,14 @@ public class SafeRoudActivity extends AppCompatActivity  implements View.OnClick
 
     @Override
     public void onClick(View v) {
+        if (v==buttonSignUp){
 
         Intent i = new Intent(this,SignUpActivity.class);
-        startActivity(i);
+        startActivity(i);}
 
-
-        Intent t  = new Intent(this,LoginActivity.class);
-        startActivity(t);
+        if (v==buttonLogIn){
+        Intent i  = new Intent(this,LoginActivity.class);
+        startActivity(i);}
 
 
     }

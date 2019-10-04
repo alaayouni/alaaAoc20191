@@ -11,63 +11,59 @@
         android:id="@+id/editTextEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="25dp"
+        android:layout_margin="15dp"
         android:ems="10"
         android:hint="Email"
         android:inputType="textEmailAddress"
         android:padding="25dp" />
 
     <EditText
-    android:id="@+id/editTextFirstName"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_margin="25dp"
-    android:ems="10"
-    android:hint="FirstName"
-    android:inputType="text"
-    android:padding="25dp" />
+        android:id="@+id/editTextFirstName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:ems="10"
+        android:hint="FirstName"
+        android:inputType="text"
+        android:padding="25dp" />
 
     <EditText
         android:id="@+id/editTextLastName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="25dp"
+        android:layout_margin="15dp"
         android:ems="10"
         android:hint="LasttName"
         android:inputType="text"
         android:padding="25dp" />
+
     <EditText
         android:id="@+id/editTextUsertName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="25dp"
+        android:layout_margin="15dp"
         android:ems="10"
         android:hint="UsertName"
         android:inputType="text"
         android:padding="25dp" />
 
 
-
-
-
-
-
     <EditText
-android:id="@+id/editTextPassword"
-android:layout_width="wrap_content"
-android:layout_height="wrap_content"
-android:layout_margin="25dp"
-android:ems="10"
-android:hint="password"
-android:inputType="textPassword"
-android:padding="25dp" />
+        android:id="@+id/editTextPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:ems="10"
+        android:hint="password"
+        android:inputType="textPassword"
+        android:padding="25dp" />
 
     <Button
         android:id="@+id/buttonLogIn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="25dp"
-        android:padding="25dp"
+        android:layout_margin="15dp"
+        android:padding="15dp"
         android:text="SignUp" />
     </LinearLayout>
 
