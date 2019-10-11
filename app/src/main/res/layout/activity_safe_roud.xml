@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@drawable/road"
     android:layout_height="match_parent"
     tools:context=".SafeRoudActivity">
 
@@ -19,13 +20,11 @@
             android:layout_marginStart="100dp"
             android:layout_marginTop="126dp"
             android:text="Safe Roads"
-            android:textColor="#298F2D"
+            android:textColor="#F1F5F1"
             android:textSize="36sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
-
-
 
 
         <Button
@@ -34,9 +33,10 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="100dp"
             android:layout_marginStart="122dp"
-            android:layout_marginTop="126dp"
+            android:layout_marginTop="120dp"
+            android:backgroundTint="#005C3F3F"
             android:text="   LogIn "
-            android:textColor="#3F51B5"
+            android:textColor="#F5F6FC"
             android:textSize="24sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -49,8 +49,9 @@
             android:layout_marginEnd="100dp"
             android:layout_marginStart="122dp"
             android:layout_marginTop="10dp"
+            android:backgroundTint="#005A3F3F"
             android:text="  SignUp  "
-            android:textColor="#3F51B5"
+            android:textColor="#F2F3F7"
             android:textSize="24sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

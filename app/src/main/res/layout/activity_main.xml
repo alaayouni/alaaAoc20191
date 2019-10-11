@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
+    android:background="@drawable/road"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MainActivity">
@@ -16,7 +17,7 @@
         android:layout_marginStart="100dp"
         android:layout_marginTop="126dp"
         android:text="What Happend ?"
-        android:textColor="#298F2D"
+        android:textColor="#FCFDFC"
         android:textSize="36sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -30,6 +31,21 @@
         android:layout_margin="25dp"
         android:ems="10"
         android:inputType="textWebEditText"
-        android:padding="25dp" />
+        android:padding="25dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF" />
+
+    <Button
+        android:id="@+id/buttonLogIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:background="#232924"
+        android:backgroundTint="#03FFFFFF"
+        android:padding="100dp"
+        android:text="Done"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textSize="30sp" />
 
 </LinearLayout>

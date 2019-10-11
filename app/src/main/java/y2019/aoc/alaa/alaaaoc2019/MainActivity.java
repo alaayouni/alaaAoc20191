@@ -53,4 +53,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
        // return super.onOptionsItemSelected(item);
     }
+
+    @Override
+    public void onClick(View v) {
+
+    }
 }

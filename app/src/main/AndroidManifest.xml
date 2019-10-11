@@ -1,10 +1,8 @@
-//<<<<<<< Original<<<<<<< Original<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-xmlns:tools="http://schemas.android.com/tools"
 package="y2019.aoc.alaa.alaaaoc2019">
 
 <application
-    tools:replace="android:appComponentFactory"
     android:allowBackup="true"
     android:icon="@mipmap/ic_launcher"
     android:label="@string/app_name"
@@ -19,22 +17,10 @@ package="y2019.aoc.alaa.alaaaoc2019">
         </intent-filter>
     </activity>
     <activity android:name=".LoginActivity" />
+    <activity android:name=".CameraActivity" />
     <activity android:name=".SignUpActivity" />
     <activity android:name=".MainActivity" />
     <activity android:name=".SafeRoudActivity"></activity>
 
 </application>
-
-</manifest>=======<manifest xmlns:android="http://schemas.android.com/apk/res/android">
-
-<application>
-    <activity android:name="y2019.aoc.alaa.alaaaoc2019.CameraActivity"></activity>
-</application>
-</manifest>>>>>>>> Added
-
-    =======<manifest xmlns:android="http://schemas.android.com/apk/res/android">
-
-<application>
-    <activity android:name="y2019.aoc.alaa.alaaaoc2019.CameraActivity"></activity>
-</application>
-</manifest>>>>>>>> Added
+</manifest>

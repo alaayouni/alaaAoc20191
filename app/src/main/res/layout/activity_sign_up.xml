@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@drawable/road"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".SignUpActivity">
@@ -15,7 +16,9 @@
         android:ems="10"
         android:hint="Email"
         android:inputType="textEmailAddress"
-        android:padding="25dp" />
+        android:padding="25dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF" />
 
     <EditText
         android:id="@+id/editTextFirstName"
@@ -25,7 +28,10 @@
         android:ems="10"
         android:hint="FirstName"
         android:inputType="text"
-        android:padding="25dp" />
+        android:padding="25dp"
+        android:textColor="#FDFFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textSize="14sp" />
 
     <EditText
         android:id="@+id/editTextLastName"
@@ -35,7 +41,10 @@
         android:ems="10"
         android:hint="LasttName"
         android:inputType="text"
-        android:padding="25dp" />
+        android:padding="25dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textSize="14sp" />
 
     <EditText
         android:id="@+id/editTextUsertName"
@@ -45,7 +54,10 @@
         android:ems="10"
         android:hint="UsertName"
         android:inputType="text"
-        android:padding="25dp" />
+        android:padding="25dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textSize="14sp" />
 
 
     <EditText
@@ -56,15 +68,22 @@
         android:ems="10"
         android:hint="password"
         android:inputType="textPassword"
-        android:padding="25dp" />
+        android:padding="25dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textSize="14sp" />
 
     <Button
         android:id="@+id/buttonLogIn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="15dp"
+        android:backgroundTint="#00F3EAEA"
         android:padding="15dp"
-        android:text="SignUp" />
+        android:text="SignUp"
+        android:textColor="#F5F2F2"
+        android:textColorHint="#F8F4F4"
+        android:textSize="30sp" />
     </LinearLayout>
 
 

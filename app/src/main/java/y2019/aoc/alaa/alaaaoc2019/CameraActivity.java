@@ -43,7 +43,7 @@ public class CameraActivity extends AppCompatActivity implements View.OnClickLis
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         if (requestCode == CAMERA_REQUEST && resultCode == Activity.RESULT_OK) {
 
-            bitmap = (Bitmap) data.getExtras().get(&&);
+            bitmap = (Bitmap) data.getExtras().get("data");
 
             imageView.setImageBitmap(bitmap);
         }

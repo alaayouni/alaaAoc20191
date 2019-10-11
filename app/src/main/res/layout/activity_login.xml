@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@drawable/road"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".LoginActivity">
@@ -15,7 +16,9 @@
         android:ems="10"
         android:hint="UserName"
         android:inputType="textEmailAddress"
-        android:padding="25dp" />
+        android:padding="25dp"
+        android:textColor="#FFF7F7"
+        android:textColorHint="#F3EEEE" />
 
     <EditText
         android:id="@+id/editTextPassword"
@@ -25,13 +28,20 @@
         android:ems="10"
         android:hint="password"
         android:inputType="textPassword"
-        android:padding="25dp" />
+        android:padding="25dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FCF7F7" />
 
     <Button
         android:id="@+id/buttonLogIn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="25dp"
+        android:background="#232924"
+        android:backgroundTint="#03FFFFFF"
         android:padding="25dp"
-        android:text="Login" />
+        android:text="Login"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textSize="30sp" />
 </LinearLayout>
