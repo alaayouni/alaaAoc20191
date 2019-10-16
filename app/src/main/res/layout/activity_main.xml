@@ -38,14 +38,14 @@
     <Button
         android:id="@+id/buttonLogIn"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="25dp"
+        android:layout_height="100dp"
+        android:layout_margin="100dp"
         android:background="#232924"
         android:backgroundTint="#03FFFFFF"
         android:padding="100dp"
         android:text="Done"
-        android:textColor="#FFFFFF"
-        android:textColorHint="#FFFFFF"
+        android:textColor="#2D3D2E"
+        android:textColorHint="#2C3F2D"
         android:textSize="30sp" />
 
 </LinearLayout>
