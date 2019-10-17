@@ -5,6 +5,7 @@ package y2019.aoc.alaa.alaaaoc2019;
         import android.view.Menu;
         import android.view.MenuItem;
         import android.view.View;
+        import android.widget.Button;
         import android.widget.EditText;
         import android.widget.TextView;
         import android.widget.Toast;
@@ -12,6 +13,8 @@ package y2019.aoc.alaa.alaaaoc2019;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     TextView tvWhatH;
     EditText editTextWhatH;
+    Button buttonDone;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,6 +24,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         //String email =getIntent().getStringExtra("email");
        tvWhatH = findViewById(R.id.textViewWh);
        editTextWhatH = findViewById(R.id.editTextWH);
+       //buttonDone = finishFromChild(R.id.buttonLogIn);
         tvWhatH.setOnClickListener(this);
 
 

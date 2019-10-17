@@ -40,12 +40,13 @@
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:layout_margin="100dp"
-        android:background="#232924"
-        android:backgroundTint="#03FFFFFF"
+        android:background="#070707"
+        android:backgroundTint="#0AF2F7F5"
+        android:hint="DONE"
         android:padding="100dp"
-        android:text="Done"
-        android:textColor="#2D3D2E"
-        android:textColorHint="#2C3F2D"
+        android:text="DONE"
+        android:textColor="#205520"
+        android:textColorHint="#E9000000"
         android:textSize="30sp" />
 
 </LinearLayout>
