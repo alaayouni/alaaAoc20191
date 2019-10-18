@@ -13,7 +13,8 @@ package y2019.aoc.alaa.alaaaoc2019;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     TextView tvWhatH;
     EditText editTextWhatH;
-    Button buttonDone;
+    TextView tvDone;
+
 
 
     @Override
@@ -24,8 +25,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         //String email =getIntent().getStringExtra("email");
        tvWhatH = findViewById(R.id.textViewWh);
        editTextWhatH = findViewById(R.id.editTextWH);
-       //buttonDone = finishFromChild(R.id.buttonLogIn);
-        tvWhatH.setOnClickListener(this);
+        //tvWhatH.setOnClickListener(this);
+        tvDone = findViewById(R.id.tvDONE);
+        tvDone.setOnClickListener(this);
+
+
 
 
 
