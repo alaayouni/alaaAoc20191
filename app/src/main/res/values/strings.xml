@@ -1,5 +1,5 @@
 <resources>
     <string name="app_name">alaaAoc2019</string>
-
+    <string name="title_activity_maps">Map</string>
 </resources>
 

@@ -38,11 +38,16 @@
     <TextView
         android:id="@+id/tvDONE"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="303dp"
         android:gravity="center_horizontal|center_vertical"
         android:text="DONE"
         android:textColor="@android:color/white"
         android:textSize="36sp" />
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="103dp"
+        android:layout_height="wrap_content" />
 
 
 </LinearLayout>
