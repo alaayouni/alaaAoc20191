@@ -11,12 +11,12 @@
     <EditText
         android:id="@+id/editTextEmail"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="60dp"
         android:layout_margin="15dp"
         android:ems="10"
         android:hint="Email"
         android:inputType="textEmailAddress"
-        android:padding="25dp"
+        android:padding="20dp"
         android:textColor="#FFFFFF"
         android:textColorHint="#FFFFFF" />
 
@@ -28,7 +28,7 @@
         android:ems="10"
         android:hint="FirstName"
         android:inputType="text"
-        android:padding="25dp"
+        android:padding="20dp"
         android:textColor="#FDFFFFFF"
         android:textColorHint="#FFFFFF"
         android:textSize="14sp" />
@@ -41,7 +41,7 @@
         android:ems="10"
         android:hint="LasttName"
         android:inputType="text"
-        android:padding="25dp"
+        android:padding="20dp"
         android:textColor="#FFFFFF"
         android:textColorHint="#FFFFFF"
         android:textSize="14sp" />
@@ -54,7 +54,7 @@
         android:ems="10"
         android:hint="UsertName"
         android:inputType="text"
-        android:padding="25dp"
+        android:padding="20dp"
         android:textColor="#FFFFFF"
         android:textColorHint="#FFFFFF"
         android:textSize="14sp" />
@@ -68,7 +68,7 @@
         android:ems="10"
         android:hint="password"
         android:inputType="textPassword"
-        android:padding="25dp"
+        android:padding="20dp"
         android:textColor="#FFFFFF"
         android:textColorHint="#FFFFFF"
         android:textSize="14sp" />
@@ -76,7 +76,7 @@
     <Button
         android:id="@+id/buttonLogIn"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="98dp"
         android:layout_margin="15dp"
         android:backgroundTint="#00F3EAEA"
         android:padding="15dp"

@@ -11,18 +11,17 @@
 
     <TextView
         android:id="@+id/textViewWh"
-        android:layout_width="wrap_content"
+        android:layout_width="194dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="100dp"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="126dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="40dp"
         android:text="What Happend ?"
         android:textColor="#FCFDFC"
         android:textSize="36sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
 
     <EditText
         android:id="@+id/editTextWH"
@@ -38,15 +37,15 @@
     <TextView
         android:id="@+id/location"
         android:layout_width="match_parent"
-        android:layout_height="159dp"
-        android:text="                LOCATION"
+        android:layout_height="147dp"
+        android:text="              LOCATION"
         android:textColor="#FAF7F7"
         android:textSize="36sp" />
 
     <TextView
         android:id="@+id/tvDONE"
         android:layout_width="match_parent"
-        android:layout_height="400dp"
+        android:layout_height="200dp"
         android:gravity="center_horizontal|center_vertical"
         android:text="DONE"
         android:textColor="@android:color/white"

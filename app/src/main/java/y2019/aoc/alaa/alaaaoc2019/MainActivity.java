@@ -1,5 +1,6 @@
 package y2019.aoc.alaa.alaaaoc2019;
 
+        import android.content.Intent;
         import android.support.v7.app.AppCompatActivity;
         import android.os.Bundle;
         import android.view.Menu;
@@ -11,6 +12,7 @@ package y2019.aoc.alaa.alaaaoc2019;
         import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+    TextView tvlocation;
     TextView tvWhatH;
     EditText editTextWhatH;
     TextView tvDone;
@@ -28,32 +30,34 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         //tvWhatH.setOnClickListener(this);
         tvDone = findViewById(R.id.tvDONE);
         tvDone.setOnClickListener(this);
-
-
-
-
-
-
-
-
-
+        tvlocation = findViewById(R.id.location);
+        tvlocation.setOnClickListener(this);
     }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.my_menu, menu);
-        return super.onCreateOptionsMenu(menu);
+
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
+        Intent goLogOutActivity;
+        Intent goPictureActivity;
+
+
 
         switch (item.getItemId())
         {
             case R.id.mnItmPicture:
+                goPictureActivity=new Intent(getApplicationContext(),SignUpActivity.class);
+                startActivity(goPictureActivity);
                 Toast.makeText(getBaseContext(), "Hi Picture", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.mnItmLogOut:
+                goLogOutActivity =new Intent(getApplicationContext(),SignUpActivity.class);
+                startActivity(goLogOutActivity);
                 Toast.makeText(getBaseContext(), "Hi LogOut", Toast.LENGTH_SHORT).show();
                 break;
         }
@@ -64,6 +68,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View v) {
+        if (v==tvlocation){
+
+            Intent i = new Intent(this,MapsActivity.class);
+            startActivity(i);}
+
 
     }
 }
