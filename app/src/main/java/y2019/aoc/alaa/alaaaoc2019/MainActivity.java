@@ -12,11 +12,10 @@ package y2019.aoc.alaa.alaaaoc2019;
         import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
-    TextView tvlocation;
+    TextView tvLocation;
     TextView tvWhatH;
     EditText editTextWhatH;
     TextView tvDone;
-
 
 
     @Override
@@ -30,8 +29,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         //tvWhatH.setOnClickListener(this);
         tvDone = findViewById(R.id.tvDONE);
         tvDone.setOnClickListener(this);
-        tvlocation = findViewById(R.id.location);
-        tvlocation.setOnClickListener(this);
+        tvLocation = findViewById(R.id.location);
+        tvLocation.setOnClickListener(this);
     }
 
 
@@ -43,21 +42,21 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        Intent goLogOutActivity;
-        Intent goPictureActivity;
+        Intent goToLogOutActivity;
+        Intent goToCameraActivity;
 
 
 
         switch (item.getItemId())
         {
             case R.id.mnItmPicture:
-                goPictureActivity=new Intent(getApplicationContext(),SignUpActivity.class);
-                startActivity(goPictureActivity);
+           goToCameraActivity=new Intent(getApplicationContext(),CameraActivity.class);
+                startActivity(goToCameraActivity);
                 Toast.makeText(getBaseContext(), "Hi Picture", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.mnItmLogOut:
-                goLogOutActivity =new Intent(getApplicationContext(),SignUpActivity.class);
-                startActivity(goLogOutActivity);
+                goToLogOutActivity =new Intent(getApplicationContext(),SignUpActivity.class);
+                startActivity(goToLogOutActivity);
                 Toast.makeText(getBaseContext(), "Hi LogOut", Toast.LENGTH_SHORT).show();
                 break;
         }
@@ -68,11 +67,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View v) {
-        if (v==tvlocation){
+        if (v==tvLocation){
 
             Intent i = new Intent(this,MapsActivity.class);
-            startActivity(i);}
-
+            startActivity(i);
 
     }
 }
+
