@@ -41,7 +41,14 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
 
     }
-    public void logIn (String email,String password) {
+    @Override
+    public void onStart() {
+        super.onStart();
+        // Check if user is signed in (non-null) and update UI accordingly.
+        FirebaseUser currentUser = mAuth.getCurrentUser();
+       // updateUI(currentUser);
+    }
+    public void LogIn (String email,String password) {
         mAuth.createUserWithEmailAndPassword(email, password)
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                     @Override
@@ -56,16 +63,15 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                             //updateUI(user);
                         } else {
                             // If sign in fails, display a message to the user.
-                            int firbaseAuth = Log.w("createUserWithEmail:failure"
-
-                                    , "FirbaseAuth", task.getException());
+                             Log.w("Firebase", "signInWithEmail: failure", task.getException());
 
                             Toast.makeText(LoginActivity.this, "Authentication failed.",
                                     Toast.LENGTH_SHORT).show();
                             //updateUI(null);
                         }
 
-                        // ...
+                        // .
+                        // ..
                     }
                 });
 

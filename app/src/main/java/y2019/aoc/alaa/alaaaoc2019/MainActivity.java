@@ -13,7 +13,8 @@ package y2019.aoc.alaa.alaaaoc2019;
         import android.widget.TextView;
         import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+public class
+MainActivity extends AppCompatActivity implements View.OnClickListener {
     TextView tvLocation;
     TextView tvWhatH;
     EditText editTextWhatH;
@@ -23,7 +24,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.
+                layout.activity_main);
         //String password =getIntent().getStringExtra("password");
         //String email =getIntent().getStringExtra("email");
        tvWhatH = findViewById(R.id.textViewWh);
@@ -39,6 +41,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.my_menu, menu);
+        return  super.onCreateOptionsMenu(menu);
+
 
     }
 
@@ -69,11 +73,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View v) {
-        if (v==tvLocation){
+        if (v == tvLocation) {
 
-            Intent i = new Intent(this,MapsActivity.class);
+            Intent i = new Intent(this, MapsActivity.class);
             startActivity(i);
 
+        }
     }
 }
 
