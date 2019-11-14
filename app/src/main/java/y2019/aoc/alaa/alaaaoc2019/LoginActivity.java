@@ -25,7 +25,6 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     private FirebaseAuth mAuth;
 
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         // Initialize Firebase Auth
@@ -54,28 +53,24 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
-                            Intent i = new Intent(LoginActivity.this, MainActivity.class);
-                            startActivity(i);
-
                             // Sign in success, update UI with the signed-in user's information
-                            Log.d("FirbaseAuth", "createUserWithEmail:success");
+                            Log.d("Firebase", "createUserWithEmail:success");
                             FirebaseUser user = mAuth.getCurrentUser();
-                            //updateUI(user);
+                           // updateUI(user);
                         } else {
                             // If sign in fails, display a message to the user.
-                             Log.w("Firebase", "signInWithEmail: failure", task.getException());
-
+                            Log.w("Firebase", "createUserWithEmail:failure", task.getException());
                             Toast.makeText(LoginActivity.this, "Authentication failed.",
                                     Toast.LENGTH_SHORT).show();
-                            //updateUI(null);
+                           // updateUI(null);
                         }
 
-                        // .
-                        // ..
+                        // ...
                     }
                 });
-
     }
+
+
         @Override
     public void onClick(View v) {
         if(v==buttonLogIn){

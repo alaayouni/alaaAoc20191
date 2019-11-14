@@ -80,8 +80,14 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
     @Override
     public void onClick(View v) {
         if (v == buttonLogIn) {
-            signUp(editTextEmail.getText().toString(), editTextPassword.getText().toString());
+            if (editTextEmail.getText().toString().equals("") || editTextPassword.getText().toString().equals("")||editTextFName.getText().toString().equals("") || editTextLName.getText().toString().equals("") || editTextUName.getText().toString().equals("")){
+                Toast.makeText(this,"empty methods",Toast.LENGTH_LONG).show();
+            }
+            else {
+                signUp(editTextEmail.getText().toString(), editTextPassword.getText().toString());
 
+            }
         }
+
     }
 }
