@@ -45,7 +45,6 @@ MainActivity extends AppCompatActivity implements View.OnClickListener {
 
 
     }
-
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         Intent goToLogOutActivity;

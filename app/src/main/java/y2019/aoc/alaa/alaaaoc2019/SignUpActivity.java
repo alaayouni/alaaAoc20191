@@ -18,7 +18,7 @@ import com.google.firebase.auth.FirebaseUser;
 
 public class SignUpActivity extends AppCompatActivity implements View.OnClickListener {
     EditText editTextEmail, editTextFName, editTextLName, editTextUName, editTextPassword;
-    Button buttonLogIn;
+    Button buttonSignUp;
     private FirebaseAuth mAuth;
 
     @Override
@@ -32,8 +32,8 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
         editTextLName = findViewById(R.id.editTextLastName);
         editTextUName = findViewById(R.id.editTextUsertName);
         editTextPassword = findViewById(R.id.editTextPassword);
-        buttonLogIn = findViewById(R.id.buttonLogIn);
-        buttonLogIn.setOnClickListener(this);
+        buttonSignUp = findViewById(R.id.buttonLogIn);
+        buttonSignUp.setOnClickListener(this);
 
     }
 
@@ -79,7 +79,7 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
 
     @Override
     public void onClick(View v) {
-        if (v == buttonLogIn) {
+        if (v == buttonSignUp) {
             if (editTextEmail.getText().toString().equals("") || editTextPassword.getText().toString().equals("")||editTextFName.getText().toString().equals("") || editTextLName.getText().toString().equals("") || editTextUName.getText().toString().equals("")){
                 Toast.makeText(this,"empty methods",Toast.LENGTH_LONG).show();
             }
