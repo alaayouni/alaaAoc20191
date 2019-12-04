@@ -60,9 +60,9 @@ MainActivity extends AppCompatActivity implements View.OnClickListener {
                 Toast.makeText(getBaseContext(), "Hi Picture", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.mnItmLogOut:
-                goToLogOutActivity =new Intent(getApplicationContext(),SignUpActivity.class);
+                goToLogOutActivity =new Intent(getApplicationContext(),LoginActivity.class);
                 startActivity(goToLogOutActivity);
-                Toast.makeText(getBaseContext(), "Hi LogOut", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getBaseContext(), "Hi LogIn", Toast.LENGTH_SHORT).show();
                 break;
         }
         return true;
