@@ -1,6 +1,8 @@
 package y2019.aoc.alaa.alaaaoc2019;
 
+        import android.content.DialogInterface;
         import android.content.Intent;
+        import android.support.v7.app.AlertDialog;
         import android.support.v7.app.AppCompatActivity;
         import android.os.Bundle;
         import android.view.Menu;
@@ -52,23 +54,46 @@ MainActivity extends AppCompatActivity implements View.OnClickListener {
 
 
 
-        switch (item.getItemId())
-        {
+        switch (item.getItemId()) {
             case R.id.mnItmPicture:
-           goToCameraActivity=new Intent(getApplicationContext(),CameraActivity.class);
+                goToCameraActivity = new Intent(getApplicationContext(), CameraActivity.class);
                 startActivity(goToCameraActivity);
                 Toast.makeText(getBaseContext(), "Hi Picture", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.mnItmLogOut:
-                goToLogOutActivity =new Intent(getApplicationContext(),LoginActivity.class);
-                startActivity(goToLogOutActivity);
-                Toast.makeText(getBaseContext(), "Hi LogIn", Toast.LENGTH_SHORT).show();
-                break;
+                AlertDialog.Builder Builder = new AlertDialog.Builder(MainActivity.this);
+                Builder.setMessage("Are you sure you wanna leave?").setCancelable(false)
+                        .setPositiveButton("yes", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialogInterface, int i) {
+                                Intent goToLogOutActivity;
+                                goToLogOutActivity = new Intent(getApplicationContext(), WelcomeActivity.class);
+                                startActivity(goToLogOutActivity);
+                                Toast.makeText(getBaseContext(), "Hi ", Toast.LENGTH_SHORT).show();
+                            }
+                        })
+                        .setNegativeButton("No", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                dialog.cancel();
+                            }
+                        });
+
+
         }
-        return true;
+
+
+
+return true;
+
+
+
+
+        }
+
 
        // return super.onOptionsItemSelected(item);
-    }
+
 
     @Override
     public void onClick(View v) {

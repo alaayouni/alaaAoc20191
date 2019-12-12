@@ -1,7 +1,9 @@
 
 package y2019.aoc.alaa.alaaaoc2019;
 
-public class Item {
+public class
+
+Item {
     private String Camera;
     private String WhatHappend;
     private String Location;
