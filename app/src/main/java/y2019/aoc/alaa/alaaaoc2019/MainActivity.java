@@ -61,12 +61,13 @@ MainActivity extends AppCompatActivity implements View.OnClickListener {
                 Toast.makeText(getBaseContext(), "Hi Picture", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.mnItmLogOut:
-                AlertDialog.Builder Builder = new AlertDialog.Builder(MainActivity.this);
+                 AlertDialog.Builder Builder = new AlertDialog.Builder(MainActivity.this);
                 Builder.setMessage("Are you sure you wanna leave?").setCancelable(false)
                         .setPositiveButton("yes", new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialogInterface, int i) {
                                 Intent goToLogOutActivity;
+
                                 goToLogOutActivity = new Intent(getApplicationContext(), WelcomeActivity.class);
                                 startActivity(goToLogOutActivity);
                                 Toast.makeText(getBaseContext(), "Hi ", Toast.LENGTH_SHORT).show();
@@ -78,6 +79,8 @@ MainActivity extends AppCompatActivity implements View.OnClickListener {
                                 dialog.cancel();
                             }
                         });
+                AlertDialog Alert=Builder.create();
+                Alert.show();;
 
 
         }
