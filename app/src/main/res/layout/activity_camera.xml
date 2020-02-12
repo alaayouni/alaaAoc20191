@@ -7,26 +7,26 @@
     android:orientation="vertical"
     tools:context=".CameraActivity">
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="178dp"
-        android:layout_height="399dp"
-        android:layout_marginEnd="213dp"
-        android:layout_marginStart="150dp"
-        android:layout_marginTop="47dp"
-        android:src="@drawable/road"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <Button
-        android:id="@+id/camera"
+        android:id="@+id/Camera"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="wrap_content"
         android:background="#00E6E1E1"
-        android:text="camera"
+        android:text="Gallery"
         android:textColor="#FD0A0A0A"
         android:textColorHint="#F8F8F8" />
+
+    <Button
+        android:id="@+id/Gallery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Camera" />
+
+    <ImageButton
+        android:id="@+id/ImageButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/road" />
 
 
 </LinearLayout>
