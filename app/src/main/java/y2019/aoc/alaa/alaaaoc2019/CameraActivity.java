@@ -47,11 +47,11 @@ public class CameraActivity extends AppCompatActivity implements View.OnClickLis
             Intent i = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
             startActivityForResult(i, CAMERA_REQUEST);
         } else {
-
+            Intent i =new
+                    Intent(Intent.ACTION_PICK,android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
+            startActivityForResult(i, SELECT_IMAGE);
         }
-        Intent i =new
-        Intent(Intent.ACTION_PICK,android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
-        startActivityForResult(i, SELECT_IMAGE);
+
 
 
     }

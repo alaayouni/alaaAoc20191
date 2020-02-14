@@ -15,8 +15,7 @@ package y2019.aoc.alaa.alaaaoc2019;
         import android.widget.TextView;
         import android.widget.Toast;
 
-public class
-MainActivity extends AppCompatActivity implements View.OnClickListener {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     TextView tvLocation;
     TextView tvWhatH;
     EditText editTextWhatH;

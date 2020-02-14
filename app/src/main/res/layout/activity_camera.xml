@@ -10,22 +10,23 @@
     <Button
         android:id="@+id/Camera"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="92dp"
         android:background="#00E6E1E1"
-        android:text="Gallery"
+        android:text="Camera"
         android:textColor="#FD0A0A0A"
         android:textColorHint="#F8F8F8" />
 
     <Button
         android:id="@+id/Gallery"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Camera" />
+        android:layout_height="92dp"
+        android:background="#00FFFFFF"
+        android:text="Gallery" />
 
     <ImageButton
         android:id="@+id/ImageButton"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="593dp"
         app:srcCompat="@drawable/road" />
 
 
