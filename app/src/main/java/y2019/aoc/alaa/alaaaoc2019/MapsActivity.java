@@ -1,5 +1,6 @@
 package y2019.aoc.alaa.alaaaoc2019;
 
+import android.content.pm.PackageManager;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
 
@@ -34,6 +35,11 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
      * it inside the SupportMapFragment. This method will only be triggered once the user has
      * installed Google Play services and returned to the app.
      */
+    public void fetchLastLocation(){
+        if(ActivityCompat.checkSelfPermission(this,android)Mainfest.permission.ACCESS_FINE_LOCATION)
+            !=PackageManager.PERMISSION_GRANTED){
+    }
+
     @Override
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
